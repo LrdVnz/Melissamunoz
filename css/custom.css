@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+.video-mobile {
+	display:none;
+}
+
+@media (max-width: 768px) {
+	.video-desktop {
+		display:none;
+	}
+
+	.video-mobile {
+		display:block;
+	}
+}
+
+.fixed-size {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
