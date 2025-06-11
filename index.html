@@ -26,13 +26,17 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 	<!-- Document Title
 	============================================= -->
 	<title>Melissa Munoz</title>
 
 </head>
 
-<body class="stretched side-push-panel">
+<body class="stretched side-push-panel ">
 
 	<div class="body-overlay"></div>
 
@@ -89,7 +93,7 @@
 							<a href="index.html">
 						
                             <div class="d-flex align-items-center mt-4">
-<h1 >Melissa Munoz</h1>
+<h1 id="title" >Melissa Munoz</h1>
 							</div>
 							
 							</a>
@@ -150,7 +154,7 @@
 								</span>
 							</h1>
 						</div>
-						<a href="#" class="button button-border button-light button-rounded" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Scopri di più</a>
+						<a href="#" id="scopri-di-piu" class="button button-border button-light button-rounded" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Scopri di più</a>
 					</div>
 				</div>
 
@@ -160,8 +164,6 @@
 						<source src='images/custom/obedience-horizontal.webm' type='video/webm'>
 						<!-- <source src='one-page/images/videos/1.mp4' type='video/mp4'> -->
 					</video>
-					<div class="video-overlay video-desktop" style="background-color: rgba(0,0,0,0.1);"></div>
-				
 					<video class="video-mobile" poster="images/custom/award1.jpg" preload="auto" loop autoplay muted playsinline>
 						<source src='images/custom/obedience-vertical.mp4' type='video/mp4'>
 						<source src='images/custom/obedience-vertical.webm' type='video/webm'>
@@ -268,7 +270,7 @@
 
 					</div><!-- #portfolio end -->
 
-					<div class="mt-5 text-center mb-5"><a class="button button-border button-circle fw-semibold" data-scrollto="#form-anchor" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Chiedi una lezione</a></div>
+					<div class="mt-5 text-center mb-5"><a id="chiedi-lezione" class="button button-border button-circle fw-semibold" data-scrollto="#form-anchor" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Chiedi una lezione</a></div>
 
 				</div>
 
@@ -378,7 +380,7 @@
 									</div>
 
 									<div class="col-12 text-center mb-4">
-										<button class="button button-border button-circle fw-medium ms-0 mt-4" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Invia</button>
+										<button id="invia" class="button button-border button-circle fw-medium ms-0 mt-4" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Invia</button>
 										<br>
 									</div>
 
@@ -405,7 +407,7 @@
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark border-0">
+		<footer id="footer" class=" border-0">
 
 			<div class="container text-center">
 				<div class="footer-widgets-wrap">

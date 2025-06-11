@@ -25,3 +25,42 @@
   object-fit: cover;
 }
 
+
+#title {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  #title {
+	font-size: 2.5rem;
+  }
+}
+
+#footer, #copyrights {
+	background-color: #fde9e2;
+}
+
+#footer a, #copyrights a {
+	color: #000;
+}
+
+#scopri-di-piu, #chiedi-lezione, #invia {
+	  background-color: #fde9e28c;
+  color: #242222;
+  border: 0.5px solid #242222;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#scopri-di-piu:hover, #chiedi-lezione:hover, #invia:hover {
+  background-color: #fde9e2;
+  color: #000000;
+  border: 1px solid #fde9e2;
+}
+
+.is-expanded-menu .full-header #logo {
+	border-right: none; 
+}
