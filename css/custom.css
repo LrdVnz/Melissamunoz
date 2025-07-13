@@ -64,3 +64,14 @@
 .is-expanded-menu .full-header #logo {
 	border-right: none; 
 }
+
+#first-list {
+  list-style-type: none;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
+}
