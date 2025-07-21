@@ -6,23 +6,7 @@
 -----------------------------------------------------------------*/
 
 .video-mobile {
-	display:none;
-}
-
-@media (max-width: 768px) {
-	.video-desktop {
-		display:none;
-	}
-
-	.video-mobile {
-		display:block;
-	}
-}
-
-.fixed-size {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
+  display: none;
 }
 
 
@@ -33,36 +17,36 @@
   font-size: 3rem;
 }
 
-@media (max-width: 768px) {
-  #title {
-	font-size: 2.5rem;
-  }
+#footer,
+#copyrights {
+  background-color: #fde9e2;
 }
 
-#footer, #copyrights {
-	background-color: #fde9e2;
+#footer a,
+#copyrights a {
+  color: #000;
 }
 
-#footer a, #copyrights a {
-	color: #000;
-}
-
-#scopri-di-piu, #chiedi-lezione, #invia {
-	  background-color: #fde9e28c;
+#scopri-di-piu,
+#chiedi-lezione,
+#invia {
+  background-color: #fde9e28c;
   color: #242222;
   border: 0.5px solid #242222;
   padding: 10px 20px;
   text-decoration: none;
 }
 
-#scopri-di-piu:hover, #chiedi-lezione:hover, #invia:hover {
+#scopri-di-piu:hover,
+#chiedi-lezione:hover,
+#invia:hover {
   background-color: #fde9e2;
   color: #000000;
   border: 1px solid #fde9e2;
 }
 
 .is-expanded-menu .full-header #logo {
-	border-right: none; 
+  border-right: none;
 }
 
 #first-list {
@@ -73,13 +57,15 @@
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
+  object-fit: cover;
+  /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
 #form-anchor {
   display: block;
   position: relative;
-  top: -100px; /* stessa altezza della navbar */
+  top: -100px;
+  /* stessa altezza della navbar */
   height: 0;
   visibility: hidden;
 }
@@ -87,52 +73,99 @@
 #img-1 {
   width: 50%;
   height: 40%;
-  object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
+  object-fit: cover;
+  /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
 #img-2 {
   width: 80%;
   height: 70%;
-  object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
+  object-fit: cover;
+  /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
-   h1 {
-            text-align: center;
-            color: #333;
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .intro-text {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            vertical-align: top;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        .phase-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .icon {
-            font-size: 1.2em;
-            margin-right: 5px;
-        }
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.phase-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  #title {
+    font-size: 2.5rem;
+  }
+
+  #slider .phone-sizing {
+    font-size: 2.5rem;
+  }
+
+  #slider a {
+    font-size: 0.9rem;
+  }
+
+  .fixed-size {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-desktop {
+    display: none;
+  }
+
+  .video-mobile {
+    display: block;
+  }
+
+  #phase-section .container .row .col-md-6 {
+    border:none !important;
+  }
+}
