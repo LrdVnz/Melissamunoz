@@ -75,3 +75,64 @@
   display: block;
   object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
+
+#form-anchor {
+  display: block;
+  position: relative;
+  top: -100px; /* stessa altezza della navbar */
+  height: 0;
+  visibility: hidden;
+}
+
+#img-1 {
+  width: 50%;
+  height: 40%;
+  object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
+}
+
+#img-2 {
+  width: 80%;
+  height: 70%;
+  object-fit: cover; /* opzionale, se vuoi che l’immagine riempia il contenitore */
+}
+
+   h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: top;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .phase-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
