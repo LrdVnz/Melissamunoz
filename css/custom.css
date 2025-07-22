@@ -169,3 +169,14 @@ body {
     border:none !important;
   }
 }
+
+#img-method-1 {
+  width: 80%;
+  height: 60%;
+  object-fit: cover;
+  /* opzionale, se vuoi che l’immagine riempia il contenitore */
+}
+
+.metodo-di-lavoro .menu-link, .about .menu-link{
+  color: #000;
+}
