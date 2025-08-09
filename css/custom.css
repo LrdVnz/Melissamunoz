@@ -186,6 +186,31 @@ img {
   border-radius: 4px;
 }
 
-#faq-section .container .row {
+#faq-section .container div.row {
   border: 1px solid #000000;
+}
+
+.backg-1 {
+  background: #fef3ef;
+}
+
+.page-section {
+ background: #ad8d8c;  
+}
+
+.page-section.alt {
+  background: #fde9e2 !important;
+}
+
+.section {
+  margin: 0; 
+  background-color:#fde9e2 ;
+}
+
+#faq-section {
+ margin: 0; 
+}
+
+#slider {
+  background: #fde9e2
 }
