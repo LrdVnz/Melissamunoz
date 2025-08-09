@@ -194,9 +194,9 @@ img {
   background: #fef3ef;
 }
 
-.page-section {
+/* .page-section {
  background: #ad8d8c;  
-}
+} */
 
 .page-section.alt {
   background: #fde9e2 !important;
@@ -213,4 +213,18 @@ img {
 
 #slider {
   background: #fde9e2
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row article {
+  flex-shrink: 1;
+}
+
+.row article img {
+  width: 100%;
+  height: auto;
 }
