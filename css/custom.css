@@ -224,7 +224,30 @@ img {
   flex-shrink: 1;
 }
 
-.row article img {
+article .portfolio-image img {
   width: 100%;
-  height: auto;
+  height: 50rem!important;
+  object-fit: cover;
+}
+
+.portfolio .row {
+  width:100%
+}
+
+.portfolio figcaption{
+  text-align: center;
+}
+
+.section-services .row {
+  width: 100%;
+}
+
+#section-services .row img {
+  width: 100%;
+  height: 40rem!important;
+  object-fit: cover;
+}
+
+#section-services {
+
 }
