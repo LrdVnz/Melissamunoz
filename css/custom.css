@@ -15,7 +15,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  color:#ffaf93
+  color: #ffaf93
 }
 
 #footer,
@@ -167,7 +167,7 @@ body {
   }
 
   #phase-section .container .row .col-md-6 {
-    border:none !important;
+    border: none !important;
   }
 }
 
@@ -178,7 +178,8 @@ body {
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
-.metodo-di-lavoro .menu-link, .about .menu-link{
+.metodo-di-lavoro .menu-link,
+.about .menu-link {
   color: #000;
 }
 
@@ -186,7 +187,7 @@ img {
   border-radius: 4px;
 }
 
-#faq-section .container div.row {
+#read-section .container div.row {
   border: 1px solid #000000;
 }
 
@@ -203,12 +204,12 @@ img {
 }
 
 .section {
-  margin: 0; 
-  background-color:#fde9e2 ;
+  margin: 0;
+  /*   background-color:#fde9e2 ; */
 }
 
-#faq-section {
- margin: 0; 
+#read-section {
+  margin: 0;
 }
 
 #slider {
@@ -226,15 +227,15 @@ img {
 
 article .portfolio-image img {
   width: 100%;
-  height: 50rem!important;
+  height: 50rem !important;
   object-fit: cover;
 }
 
 .portfolio .row {
-  width:100%
+  width: 100%
 }
 
-.portfolio figcaption{
+.portfolio figcaption {
   text-align: center;
 }
 
@@ -244,10 +245,14 @@ article .portfolio-image img {
 
 #section-services .row img {
   width: 100%;
-  height: 40rem!important;
+  height: 40rem !important;
   object-fit: cover;
 }
 
-#section-services {
+#faq-section {
+  margin-top: 25em
+}
 
+#section-contact {
+  padding-top: 10em;
 }
