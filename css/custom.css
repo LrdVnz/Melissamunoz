@@ -256,3 +256,33 @@ article .portfolio-image img {
 #section-contact {
   padding-top: 10em;
 }
+
+	@media (min-width: 576px) {
+			.card-columns {
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+				-webkit-column-gap: 1.25rem;
+				-moz-column-gap: 1.25rem;
+				column-gap: 1.25rem;
+				orphans: 1;
+				widows: 1;
+			}
+			.card-columns.grid-2 {
+				-webkit-column-count: 2;
+				-moz-column-count: 2;
+				column-count: 2;
+			}
+			.card-columns > * {
+				display: inline-block;
+				width: 100%;
+			}
+		}
+
+    #content-gallery {
+      padding-top: 1em !important;
+    }
+
+    #content-gallery .content-wrap {
+      padding-top: 0;
+    }
