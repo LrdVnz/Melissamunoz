@@ -72,8 +72,8 @@
 }
 
 #img-1 {
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: 96%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
