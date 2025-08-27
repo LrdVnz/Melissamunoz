@@ -72,8 +72,8 @@
 }
 
 #img-1 {
-  width: 50%;
-  height: 40%;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
@@ -98,6 +98,7 @@ h1 {
   font-size: 1.2em;
   margin-bottom: 30px;
 }
+
 
 .intro-text {
   text-align: center;
@@ -286,3 +287,12 @@ article .portfolio-image img {
     #content-gallery .content-wrap {
       padding-top: 0;
     }
+
+  #corso-images img {
+    width: 28em;
+    height: 28em;
+  }
+
+  #corso-images .fix {
+    margin-bottom: 30px;
+  }
