@@ -80,7 +80,7 @@
 
 #img-2 {
   width: 80%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
