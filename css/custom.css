@@ -41,7 +41,7 @@
 #scopri-di-piu:hover,
 #chiedi-lezione:hover,
 #invia:hover {
-  background-color: #fde9e2;
+  background-color: #fde9e28c;
   color: #000000;
   border: 1px solid #fde9e2;
 }
@@ -255,9 +255,17 @@ article .portfolio-image img {
 }
 
 #section-contact {
-  padding-top: 10em;
+  padding-top: 7em; 
+  margin-top: 10em;
+  margin-bottom: 15em; 
+  border: 2px solid #a8a8a8;
+  border-radius: 10px;
+  background-color: #fde9e2;
 }
 
+#section-contact h2 {
+  padding-bottom: 1em; 
+}
 	@media (min-width: 576px) {
 			.card-columns {
 				-webkit-column-count: 3;
@@ -300,8 +308,8 @@ article .portfolio-image img {
   #il-tuo-cane {
     font-size: larger;
   }
-/* 
-  #logo {
-    width: 6em;
-    height: 6em;
-  }  */
+
+  .form-control.border-form-control {
+    background-color: #fff7f5 !important;
+    border-radius: 7px; 
+  }

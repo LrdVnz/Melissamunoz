@@ -47,6 +47,9 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 
 </head>
 
+<!-- Cookiebot consent mode -->
+<script data-cookieconsent="ignore">    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("consent", "default", { ad_personalization: "denied", ad_storage: "denied", ad_user_data: "denied", analytics_storage: "denied", functionality_storage: "denied", personalization_storage: "denied", security_storage: "granted", wait_for_update: 500, }); gtag("set", "ads_data_redaction", true); gtag("set", "url_passthrough", false);
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PHQLRQCNK"></script>
 <script>
@@ -124,7 +127,8 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 							<a href="index.html">
 
 								<div class="d-flex align-items-center mt-4">
-									<img id="logo" src="images/melissa-logo-nobg-nowriting.png" style="height: 6em;width: 5em;" alt="">
+									<img id="logo" src="images/melissa-logo-nobg-nowriting.png"
+										style="height: 6em;width: 5em;" alt="">
 									<h1 id="title" style="margin-bottom: 33px;margin-left: -17px;">Melissa Munoz</h1>
 								</div>
 
@@ -874,11 +878,11 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 		<!-- FORM START ================================== -->
 
 		<a id="form-anchor"></a>
-		<div id="section-contact" class="page-section">
+		<div id="section-contact" class="page-section container">
 
 			<div class="light m-0">
 				<div class="mx-auto text-center" style="max-width: 850px;">
-					<h2 class="mb-0 fw-light ls-1">Scopri di più sul mio metodo, conosciamoci! </h2>
+					<h2 class="mb-0 fw-normal ls-1">Scopri di più sul mio metodo, conosciamoci! </h2>
 					<p>Prenota una chiamata :</p>
 				</div>
 			</div>
@@ -907,30 +911,49 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 
 							<div class="col-md-6 mb-4">
 								<input type="text" id="template-contactform-name" name="Nome" value=""
-									class="form-control border-form-control required" placeholder="Il tuo Nome">
+									class="form-control border-form-control required" placeholder="  Il tuo Nome">
 							</div>
 							<div class="col-md-6 mb-4">
 								<input type="email" id="template-contactform-email" name="Email" value=""
 									class="required email form-control border-form-control"
-									placeholder="Indirizzo Email">
+									placeholder="  Indirizzo Email">
 							</div>
 
 							<div class="col-md-4 mb-4">
 								<input type="text" id="template-contactform-phone" name="Numero di cellulare" value=""
-									class="form-control border-form-control" placeholder="Numero di telefono">
+									class="form-control border-form-control" placeholder="  Numero di telefono">
 							</div>
 
 							<div class="col-md-8 mb-4">
 								<input type="text" id="template-contactform-subject" name="Nome del Cane" value=""
 									class="required form-control border-form-control"
-									placeholder="Il nome del tuo Fido">
+									placeholder="  Il nome del tuo Fido">
 							</div>
 
 
 							<div class="col-12 mb-4">
 								<textarea class="required form-control border-form-control"
 									id="template-contactform-message" name="Messaggio" rows="7" cols="30"
-									placeholder="Il tuo messaggio"></textarea>
+									placeholder="  Raccontami quali sono le difficoltà che vivi con il tuo cane:"></textarea>
+							</div>
+
+							<!-- <div class="col-12 text-center mb-1">
+								<div class="btn-group-toggle" data-toggle="buttons">
+									<label class="btn btn-secondary active">
+										<input type="checkbox" checked autocomplete="off"> 
+									</label>
+									<p>Accetto i termini</p>
+								</div>
+								<br>
+							</div> -->
+							<div class="col-12 text-center mb-1">
+								<div class="form-check d-inline-block">
+									<input class="form-check-input" type="checkbox" value="" id="accept-terms">
+									<label class="form-check-label" for="accept-terms" style="font-size: 0.9em;">
+										Accetto <a href="#privacy-policy" target="_blank" data-scrollto="#privacy-policy" data-easing="easeInOutExpo" data-speed="1250"
+							data-offset="70">l'informativa sulla privacy</a> di Melissa Munoz. I Vostri dati verranno condivisi solo con chi vi offrirà assistenza
+									</label>
+								</div>
 							</div>
 
 							<div class="col-12 text-center mb-4">
@@ -1178,18 +1201,19 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 		</div>
 
 		<div id="copyrights" class="container col-12">
-			<div class="row mb-5">
+			<div class="row mb-5" style="padding:12px">
 				<div class="container text-start col-lg-6">
-					P.IVA 04143080135
-				</div>
-				<div class="container text-end col-lg-6">
 					Melissa Munoz Andrea 2025 - Tutti i diritti riservati
 				</div>
+				<div class="container text-end col-lg-6">
+					P.IVA 04143080135
+				</div>
+
 			</div>
 
 			<div>
 
-				<div class="container text-center privacy-policy mx-auto pt-4 col-12">
+				<div class="container text-center privacy-policy mx-auto pt-4 col-12" id="privacy-policy">
 					<h4>Privacy & Cookie Policy</h4>
 
 					Questa pagina web non raccoglie dati personali automaticamente.
@@ -1234,6 +1258,15 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 	<script src="js/plugins.min.js"></script>
 	<script src="js/functions.bundle.js"></script>
 	<script src="https://kit.fontawesome.com/b6ee0b770b.js" crossorigin="anonymous"></script>
+	<script>
+document.getElementById('template-contactform').addEventListener('submit', function(e) {
+    var terms = document.getElementById('accept-terms');
+    if (!terms.checked) {
+        alert('Devi accettare i termini e le condizioni per inviare il form.');
+        e.preventDefault();
+    }
+});
+</script>
 
 </body>
 
