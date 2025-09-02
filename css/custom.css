@@ -322,3 +322,11 @@ article .portfolio-image img {
     background-color: #fff7f5 !important;
     border-radius: 7px; 
   }
+
+  #img-2-about {
+    top:25%;
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    /* opzionale, se vuoi che l’immagine riempia il contenitore */
+  }
