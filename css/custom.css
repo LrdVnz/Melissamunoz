@@ -175,6 +175,10 @@ body {
     margin-right:10px; 
     margin-left:10px;
   }
+
+  #header-wrap .container {
+    margin-bottom: -86px!important;
+  }
 }
 
 #img-method-1 {
