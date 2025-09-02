@@ -48,8 +48,23 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 </head>
 
 <!-- Cookiebot consent mode -->
-<script data-cookieconsent="ignore">    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("consent", "default", { ad_personalization: "denied", ad_storage: "denied", ad_user_data: "denied", analytics_storage: "denied", functionality_storage: "denied", personalization_storage: "denied", security_storage: "granted", wait_for_update: 500, }); gtag("set", "ads_data_redaction", true); gtag("set", "url_passthrough", false);
+<script data-cookieconsent="ignore">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("consent", "default", {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", false);
 </script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PHQLRQCNK"></script>
 <script>
@@ -61,23 +76,26 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 	gtag('config', 'G-BTQM186VS4');
 </script>
 
+
 <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1448145309778266');
-fbq('track', 'PageView');
-fbq('track', 'Lead');
+	!function (f, b, e, v, n, t, s) {
+		if (f.fbq) return; n = f.fbq = function () {
+			n.callMethod ?
+			n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+		n.queue = []; t = b.createElement(e); t.async = !0;
+		t.src = v; s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1448145309778266');
+	fbq('track', 'PageView');
+	fbq
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1448145309778266&ev=PageView&noscript=1"
-/></noscript>
+		src="https://www.facebook.com/tr?id=1448145309778266&ev=PageView&noscript=1" /></noscript>
 <!-- End Meta Pixel Code -->
 
 <body class="stretched side-push-panel ">
@@ -958,7 +976,7 @@ src="https://www.facebook.com/tr?id=1448145309778266&ev=PageView&noscript=1"
 							<div class="col-12 mb-4">
 								<textarea class="required form-control border-form-control"
 									id="template-contactform-message" name="Messaggio" rows="7" cols="30"
-									placeholder="  Raccontami quali sono le difficoltà che vivi con il tuo cane:"></textarea>
+									placeholder="Raccontami quali sono le difficoltà che vivi con il tuo cane:" style="padding:5px;"></textarea>
 							</div>
 
 							<!-- <div class="col-12 text-center mb-1">
@@ -974,8 +992,11 @@ src="https://www.facebook.com/tr?id=1448145309778266&ev=PageView&noscript=1"
 								<div class="form-check d-inline-block">
 									<input class="form-check-input" type="checkbox" value="" id="accept-terms">
 									<label class="form-check-label" for="accept-terms" style="font-size: 0.9em;">
-										Accetto <a href="#privacy-policy" target="_blank" data-scrollto="#privacy-policy" data-easing="easeInOutExpo" data-speed="1250"
-							data-offset="70">l'informativa sulla privacy</a> di Melissa Munoz. I Vostri dati verranno condivisi solo con chi vi offrirà assistenza
+										Accetto <a href="#privacy-policy" target="_blank"
+											data-scrollto="#privacy-policy" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">l'informativa sulla privacy</a> di
+										Melissa Munoz. I Vostri dati verranno condivisi solo con chi vi offrirà
+										assistenza
 									</label>
 								</div>
 							</div>
@@ -1260,14 +1281,14 @@ src="https://www.facebook.com/tr?id=1448145309778266&ev=PageView&noscript=1"
 	<script src="js/functions.bundle.js"></script>
 	<script src="https://kit.fontawesome.com/b6ee0b770b.js" crossorigin="anonymous"></script>
 	<script>
-document.getElementById('template-contactform').addEventListener('submit', function(e) {
-    var terms = document.getElementById('accept-terms');
-    if (!terms.checked) {
-        alert('Devi accettare i termini e le condizioni per inviare il form.');
-        e.preventDefault();
-    }
-});
-</script>
+		document.getElementById('template-contactform').addEventListener('submit', function (e) {
+			var terms = document.getElementById('accept-terms');
+			if (!terms.checked) {
+				alert('Devi accettare i termini e le condizioni per inviare il form.');
+				e.preventDefault();
+			}
+		});
+	</script>
 
 </body>
 
