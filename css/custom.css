@@ -170,6 +170,11 @@ body {
   #phase-section .container .row .col-md-6 {
     border: none !important;
   }
+
+  p {
+    margin-right:10px; 
+    margin-left:10px;
+  }
 }
 
 #img-method-1 {
