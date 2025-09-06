@@ -350,3 +350,12 @@ article .portfolio-image img {
   #slider {
     background: #fde9e200;
   }
+
+  .button {
+    background-color: #f5c1af !important;
+    border: 0.5px solid #8c8484 !important;
+  }
+
+  .large-text-section {
+    font-size: large;
+  }
