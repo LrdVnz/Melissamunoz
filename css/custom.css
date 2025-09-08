@@ -359,3 +359,7 @@ article .portfolio-image img {
   .large-text-section {
     font-size: large;
   }
+
+  #slider-inner {
+    background-image: url("https://ibb.co/Mx0BMnrn");
+  }
