@@ -156,46 +156,15 @@ body {
 }
 
 
-
-@media (max-width: 768px) {
-  #title {
-    font-size: 2.5rem;
-  }
-
-  #slider .phone-sizing {
-    font-size: 2.5rem;
-  }
-
-  #slider a {
-    font-size: 0.9rem;
-  }
-
-  .fixed-size {
-    width: 100%;
-    height: auto;
-  }
-
-  .video-desktop {
-    display: none;
-  }
-
-  .video-mobile {
-    display: block;
-  }
-
-  #phase-section .container .row .col-md-6 {
-    border: none !important;
-  }
-
-  p {
-    margin-right:10px; 
-    margin-left:10px;
-  }
-
-  #header-wrap .container {
-    margin-bottom: -86px!important;
-  }
+#logo .title {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	transition: height .4s ease,padding .4s ease,margin .4s ease,opacity .3s ease;
 }
+
 
 #img-method-1 {
   width: 80%;
@@ -371,3 +340,50 @@ article .portfolio-image img {
   #chiedi-lezione {
     margin-bottom: 5rem; 
   }
+
+  #il-tuo-cane-tira {
+  margin-top: 8em;
+}
+
+@media (max-width: 768px) {
+     #il-tuo-cane-tira {
+  margin-top: 3em;
+    }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  #slider .phone-sizing {
+    font-size: 2.5rem;
+  }
+
+  #slider a {
+    font-size: 0.9rem;
+  }
+
+  .fixed-size {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-desktop {
+    display: none;
+  }
+
+  .video-mobile {
+    display: block;
+  }
+
+  #phase-section .container .row .col-md-6 {
+    border: none !important;
+  }
+
+  p {
+    margin-right:10px; 
+    margin-left:10px;
+  }
+
+}
+
+
