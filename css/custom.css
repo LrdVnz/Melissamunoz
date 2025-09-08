@@ -362,6 +362,14 @@ article .portfolio-image img {
     font-size: 0.9rem;
   }
 
+  #slider-inner {
+    background-position: 61%;
+  }
+
+  #scopri-di-piu {
+    margin-top: 10em;
+  }
+  
   .fixed-size {
     width: 100%;
     height: auto;
