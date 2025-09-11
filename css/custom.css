@@ -216,9 +216,9 @@
 
 #img-1 {
   width: 80%;
-  height: 96%;
+  height: 70%;
   object-fit: cover;
-  border-radius:700px;
+  border-radius:42%;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
@@ -488,6 +488,10 @@ article .portfolio-image img {
 
   #img-1-wrapper {
     margin-bottom: 3em;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   }
 
   .title {
