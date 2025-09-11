@@ -657,10 +657,18 @@ p {
   margin-bottom: 0 !important;
 }
 
+.fbox-content h3 {
+  font-size: 1.7rem !important;
+}
+
 .steps-section h3 {
   margin-bottom: 2em !important;
 }
 
 #contattami-final {
   font-size : larger;
+}
+
+.main-hook.form {
+  font-size: 2.6rem !important;
 }
