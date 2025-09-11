@@ -4,6 +4,113 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 
 .inter-personal {
   font-family: "Inter", sans-serif;
@@ -38,6 +145,13 @@
   font-style: normal;
 }
 
+
+.montserrat-personal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .title {
   font-family: 'Kaushan Script', 'Nunito', 'Roboto', 'Source Sans Pro', Arial, sans-serif !important;
@@ -104,6 +218,7 @@
   width: 80%;
   height: 96%;
   object-fit: cover;
+  border-radius:700px;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
@@ -441,4 +556,38 @@ article .portfolio-image img {
 
 .emphasis-title {
   margin-bottom: 185px; 
+}
+
+#scopri-di-piu {
+  font-family: 'Montserrat', serif !important;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  border-radius:30px; 
+}
+
+.hook {
+    font-family: 'DM Serif Display', serif !important;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  border-radius:30px; 
+}
+
+.main-hook {
+    font-family: 'Fira Sans', serif !important;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  border-radius:30px; 
+
+}
+
+.main-hook-secondary {
+    font-family: 'Playfair Display', serif !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: larger;
+  border-radius:30px; 
+
 }
