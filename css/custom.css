@@ -4,6 +4,15 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+
+
+.raleway-personal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .fira-sans-thin {
   font-family: "Fira Sans", sans-serif;
   font-weight: 100;
@@ -456,7 +465,7 @@ article .portfolio-image img {
 }
 
 .button {
-  background-color: #f5c1af !important;
+  background-color: #f5c1afcf  !important;
   border: 0.5px solid #8c8484 !important;
 }
 
@@ -554,9 +563,9 @@ article .portfolio-image img {
 
 #scopri-di-piu {
   font-family: 'Montserrat', serif !important;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
-  font-size: large;
+  font-size: 1.2em;
   border-radius:30px; 
 }
 
@@ -569,7 +578,7 @@ article .portfolio-image img {
 }
 
 .main-hook {
-    font-family: 'Fira Sans', serif !important;
+    font-family: 'Playfair Display', serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: larger;
@@ -607,10 +616,42 @@ article .portfolio-image img {
 }
 
 #metodo-title {
-     font-family: 'DM Serif Display', serif !important;
+  font-family: 'DM Serif Display', serif !important;
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 2.5rem !important;
   border-radius:30px !important; 
   margin-bottom: 0 !important; 
+}
+
+#come-funziona {
+  font-family: 'DM Serif Display', serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-size: 2.5rem !important;
+}
+
+#come-funziona-metodo {
+  font-family: 'DM Serif Display', serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 0 !important; 
+}
+
+p {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  color: #333 !important;
+}
+
+.fbox-content h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 0 !important;
 }
