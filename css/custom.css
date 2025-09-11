@@ -174,7 +174,8 @@ body {
 }
 
 .metodo-di-lavoro .menu-link,
-.about .menu-link {
+.about .menu-link, 
+.contattaci .menu-link {
   color: #000;
 }
 
@@ -399,5 +400,14 @@ article .portfolio-image img {
   }
 
 }
+/* 
 
+#contattami-banner {
+  background-image: url("../images/krys-running.jpeg");
+} */
 
+#il-tuo-cane-tira .large-text-section {
+  display: flex;
+  flex-direction: column;  /* centra verticalmente */
+  justify-content: center;  /* centra anche orizzontalmente (opzionale) */
+}
