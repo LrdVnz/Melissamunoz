@@ -5,12 +5,7 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
-.video-mobile {
-  display: none;
-}
-
-
-.inter-kaushan {
+.inter-personal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -23,9 +18,29 @@
   font-style: normal;
 }
 
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.playfair-display-personal {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .title {
-  font-family: 'Kaushan Script' ,'Nunito', 'Roboto', 'Source Sans Pro', Arial, sans-serif !important;
+  font-family: 'Kaushan Script', 'Nunito', 'Roboto', 'Source Sans Pro', Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
@@ -157,12 +172,12 @@ body {
 
 
 #logo .title {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	transition: height .4s ease,padding .4s ease,margin .4s ease,opacity .3s ease;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease;
 }
 
 
@@ -174,7 +189,7 @@ body {
 }
 
 .metodo-di-lavoro .menu-link,
-.about .menu-link, 
+.about .menu-link,
 .contattaci .menu-link {
   color: #000;
 }
@@ -250,112 +265,115 @@ article .portfolio-image img {
 }
 
 #section-contact {
-  padding-top: 4em; 
+  padding-top: 4em;
   margin-top: 10em;
-  margin-bottom: 15em; 
+  margin-bottom: 15em;
   border: 2px solid #a8a8a8;
   border-radius: 10px;
   background-color: #fde9e2;
 }
 
 #section-contact h2 {
-  padding-bottom: 1em; 
+  padding-bottom: 1em;
 }
-	@media (min-width: 576px) {
-			.card-columns {
-				-webkit-column-count: 3;
-				-moz-column-count: 3;
-				column-count: 3;
-				-webkit-column-gap: 1.25rem;
-				-moz-column-gap: 1.25rem;
-				column-gap: 1.25rem;
-				orphans: 1;
-				widows: 1;
-			}
-			.card-columns.grid-2 {
-				-webkit-column-count: 2;
-				-moz-column-count: 2;
-				column-count: 2;
-			}
-			.card-columns > * {
-				display: inline-block;
-				width: 100%;
-			}
-		}
 
-    #content-gallery {
-      padding-top: 1em !important;
-    }
-
-    #content-gallery .content-wrap {
-      padding-top: 0;
-    }
-
-  #corso-images img {
-    width: 28em;
-    height: 28em;
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
   }
 
-  #corso-images .fix {
-    margin-bottom: 30px;
+  .card-columns.grid-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 
-  #il-tuo-cane {
-    font-size: larger;
+  .card-columns>* {
+    display: inline-block;
+    width: 100%;
   }
+}
 
-  .form-control.border-form-control {
-    background-color: #fff7f5 !important;
-    border-radius: 7px; 
-  }
+#content-gallery {
+  padding-top: 1em !important;
+}
 
-  #img-2-about {
-    top:25%;
-    width: 80%;
-    height: 50%;
-    object-fit: cover;
-    /* opzionale, se vuoi che l’immagine riempia il contenitore */
-  }
+#content-gallery .content-wrap {
+  padding-top: 0;
+}
 
-  #slider {
-    background: #fde9e200;
-  }
+#corso-images img {
+  width: 28em;
+  height: 28em;
+}
 
-  .button {
-    background-color: #f5c1af !important;
-    border: 0.5px solid #8c8484 !important;
-  }
+#corso-images .fix {
+  margin-bottom: 30px;
+}
 
-  .large-text-section {
-    font-size: large;
-  }
+#il-tuo-cane {
+  font-size: larger;
+}
 
-  #slider-inner {
-    background-image: url("https://ibb.co/Mx0BMnrn");
-  }
+.form-control.border-form-control {
+  background-color: #fff7f5 !important;
+  border-radius: 7px;
+}
 
-  #problemi-comuni {
-    padding-top: 5.5rem; 
-  }
+#img-2-about {
+  top: 25%;
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  /* opzionale, se vuoi che l’immagine riempia il contenitore */
+}
 
-  #chiedi-lezione {
-    margin-bottom: 5rem; 
-  }
+#slider {
+  background: #fde9e200;
+}
 
-  #il-tuo-cane-tira {
+.button {
+  background-color: #f5c1af !important;
+  border: 0.5px solid #8c8484 !important;
+}
+
+.large-text-section {
+  font-size: large;
+}
+
+#slider-inner {
+  background-image: url("https://ibb.co/Mx0BMnrn");
+}
+
+#problemi-comuni {
+  padding-top: 5.5rem;
+}
+
+#chiedi-lezione {
+  margin-bottom: 5rem;
+}
+
+#il-tuo-cane-tira {
   margin-top: 4em;
 }
 
 @media (max-width: 768px) {
-     #il-tuo-cane-tira {
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column-reverse;
-    }
+  #il-tuo-cane-tira {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    #img-1-wrapper {
-      margin-bottom: 3em;
-    }
+  #img-1-wrapper {
+    margin-bottom: 3em;
+  }
 
   .title {
     font-size: 2rem;
@@ -376,7 +394,7 @@ article .portfolio-image img {
   #scopri-di-piu {
     margin-top: 10em;
   }
-  
+
   .fixed-size {
     width: 100%;
     height: auto;
@@ -395,11 +413,12 @@ article .portfolio-image img {
   }
 
   p {
-    margin-right:10px; 
-    margin-left:10px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
 }
+
 /* 
 
 #contattami-banner {
@@ -408,6 +427,14 @@ article .portfolio-image img {
 
 #il-tuo-cane-tira .large-text-section {
   display: flex;
-  flex-direction: column;  /* centra verticalmente */
-  justify-content: center;  /* centra anche orizzontalmente (opzionale) */
+  flex-direction: column;
+  /* centra verticalmente */
+  justify-content: center;
+  /* centra anche orizzontalmente (opzionale) */
+}
+
+#title-rotation {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
