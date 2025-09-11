@@ -227,6 +227,7 @@
   height: 100%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
+  border: solid 30px white; 
 }
 
 h1 {
@@ -471,9 +472,6 @@ article .portfolio-image img {
   padding-top: 5.5rem;
 }
 
-#chiedi-lezione {
-  margin-bottom: 5rem;
-}
 
 #il-tuo-cane-tira {
   margin-top: 4em;
@@ -488,10 +486,6 @@ article .portfolio-image img {
 
   #img-1-wrapper {
     margin-bottom: 3em;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   }
 
   .title {
@@ -594,4 +588,16 @@ article .portfolio-image img {
   font-size: larger;
   border-radius:30px; 
 
+}
+
+#header-wrap {
+  -webkit-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.45);
+  box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.10);
+}
+
+#img-1-wrapper {
+   display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
 }
