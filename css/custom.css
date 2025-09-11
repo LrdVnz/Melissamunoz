@@ -236,7 +236,7 @@
   height: 100%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
-  border: solid 30px white;
+  border: solid 20px white;
 }
 
 h1 {
@@ -307,7 +307,7 @@ body {
 
 
 #img-method-1 {
-  width: 80%;
+  width: 90%;
   height: 60%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
