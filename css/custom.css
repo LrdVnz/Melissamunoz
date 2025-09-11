@@ -336,7 +336,7 @@ img {
 } */
 
 .page-section.alt {
-  background: #fde9e2 !important;
+  background: #fcf2ee !important;
 }
 
 .section {
@@ -659,4 +659,8 @@ p {
 
 .steps-section h3 {
   margin-bottom: 2em !important;
+}
+
+#contattami-final {
+  font-size : larger;
 }
