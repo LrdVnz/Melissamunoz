@@ -227,7 +227,7 @@
   width: 80%;
   height: 70%;
   object-fit: cover;
-  border-radius:42%;
+  border-radius: 42%;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
 }
 
@@ -236,7 +236,7 @@
   height: 100%;
   object-fit: cover;
   /* opzionale, se vuoi che l’immagine riempia il contenitore */
-  border: solid 30px white; 
+  border: solid 30px white;
 }
 
 h1 {
@@ -465,7 +465,7 @@ article .portfolio-image img {
 }
 
 .button {
-  background-color: #f5c1afcf  !important;
+  background-color: #f5c1afcf !important;
   border: 0.5px solid #8c8484 !important;
 }
 
@@ -558,7 +558,7 @@ article .portfolio-image img {
 }
 
 .emphasis-title {
-  margin-bottom: 185px; 
+  margin-bottom: 185px;
 }
 
 #scopri-di-piu {
@@ -566,53 +566,53 @@ article .portfolio-image img {
   font-weight: 700;
   font-style: normal;
   font-size: 1.2em;
-  border-radius:30px; 
+  border-radius: 30px;
 }
 
 .hook {
-    font-family: 'DM Serif Display', serif !important;
+  font-family: 'DM Serif Display', serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: larger;
-  border-radius:30px; 
+  border-radius: 30px;
 }
 
 .main-hook {
-    font-family: 'Playfair Display', serif !important;
+  font-family: 'Playfair Display', serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: larger;
-  border-radius:30px; 
+  border-radius: 30px;
 
 }
 
 .main-hook-secondary {
-    font-family: 'Playfair Display', serif !important;
+  font-family: 'Playfair Display', serif !important;
   font-weight: 300;
   font-style: normal;
   font-size: larger;
-  border-radius:30px; 
+  border-radius: 30px;
 
 }
 
 #header-wrap {
-  -webkit-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.45);
-  box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.10);
+  -webkit-box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.10);
 }
 
 #img-1-wrapper {
-   display: flex !important;
+  display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   flex-direction: column !important;
 }
 
 #chi-sono {
-     font-family: 'Playfair Display', serif !important;
+  font-family: 'Playfair Display', serif !important;
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 3rem !important;
-  border-radius:30px !important; 
+  border-radius: 30px !important;
 }
 
 #metodo-title {
@@ -620,8 +620,9 @@ article .portfolio-image img {
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 2.5rem !important;
-  border-radius:30px !important; 
-  margin-bottom: 0 !important; 
+  border-radius: 30px !important;
+  margin-bottom: 2em !important;
+  margin-top: 2em !important;
 }
 
 #come-funziona {
@@ -636,7 +637,7 @@ article .portfolio-image img {
   font-weight: 200 !important;
   font-style: normal !important;
   font-size: 1.5rem !important;
-  margin-bottom: 0 !important; 
+  margin-bottom: 0 !important;
 }
 
 p {
@@ -648,10 +649,14 @@ p {
   color: #333 !important;
 }
 
-.fbox-content h3 {
+.fbox-content h3, h3 {
   font-family: 'Playfair Display', serif !important;
   font-weight: 600 !important;
   font-style: normal !important;
   font-size: 1.5rem !important;
   margin-bottom: 0 !important;
+}
+
+.steps-section h3 {
+  margin-bottom: 2em !important;
 }
