@@ -535,6 +535,9 @@ article .portfolio-image img {
     margin-left: 10px;
   }
 
+  .menu-link {
+    color: white !important;
+  }
 }
 
 /* 
