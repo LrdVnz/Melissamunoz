@@ -1,124 +1,63 @@
-/* ----------------------------------------------------------------
-	Custom CSS
+/* ================================================================
+   CUSTOM CSS - MELISSA MUNOZ WEBSITE
+   ================================================================
+   
+   Add all your Custom Styled CSS here for New Styles or
+   Overwriting Default Theme Styles for Better Handling Updates
+   
+   TABLE OF CONTENTS:
+   1. CSS Variables
+   2. Font Families
+   3. Typography
+   4. Layout & Structure
+   5. Components
+   6. Sections
+   7. Forms
+   8. Responsive Design
+   ================================================================ */
 
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Handling Updates
------------------------------------------------------------------*/
+/* ================================================================
+   1. CSS VARIABLES
+   ================================================================ */
+:root {
+  /* Colors */
+  --primary-color: #ffaf93;
+  --secondary-color: #fde9e2;
+  --secondary-color-alpha: #fde9e28c;
+  --background-light: #fef3ef;
+  --background-alt: #fcf2ee;
+  --text-dark: #242222;
+  --text-gray: #666;
+  --text-light: #333;
+  --border-color: #a8a8a8;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  
+  /* Fonts */
+  --font-primary: 'Raleway', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-script: 'Kaushan Script', cursive;
+  --font-serif: 'DM Serif Display', serif;
+  --font-sans: 'Montserrat', sans-serif;
+  
+  /* Spacing */
+  --section-padding: 4em;
+  --border-radius: 30px;
+  --border-radius-small: 7px;
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s ease;
+}
 
+/* ================================================================
+   2. FONT FAMILIES
+   ================================================================ */
 
+/* Primary Fonts */
 .raleway-personal {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-
-.fira-sans-thin {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.fira-sans-extralight {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.fira-sans-light {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.fira-sans-regular {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.fira-sans-medium {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.fira-sans-semibold {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.fira-sans-bold {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.fira-sans-extrabold {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.fira-sans-black {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.fira-sans-thin-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.fira-sans-extralight-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.fira-sans-light-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.fira-sans-regular-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.fira-sans-medium-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.fira-sans-semibold-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.fira-sans-bold-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.fira-sans-extrabold-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.fira-sans-black-italic {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }
 
 .inter-personal {
@@ -129,130 +68,87 @@
 }
 
 .kaushan-script-regular {
-  font-family: "Kaushan Script", cursive;
+  font-family: var(--font-script);
   font-weight: 400;
   font-style: normal;
 }
 
 .dm-serif-display-regular {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
   font-style: normal;
 }
 
 .dm-serif-display-regular-italic {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
   font-style: italic;
 }
 
-
 .playfair-display-personal {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-heading);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
 
 .montserrat-personal {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-sans);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Fira Sans Font Family - Consolidated */
+.fira-sans {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.fira-sans-thin { font-weight: 100; font-style: normal; }
+.fira-sans-extralight { font-weight: 200; font-style: normal; }
+.fira-sans-light { font-weight: 300; font-style: normal; }
+.fira-sans-regular { font-weight: 400; font-style: normal; }
+.fira-sans-medium { font-weight: 500; font-style: normal; }
+.fira-sans-semibold { font-weight: 600; font-style: normal; }
+.fira-sans-bold { font-weight: 700; font-style: normal; }
+.fira-sans-extrabold { font-weight: 800; font-style: normal; }
+.fira-sans-black { font-weight: 900; font-style: normal; }
+
+.fira-sans-thin-italic { font-weight: 100; font-style: italic; }
+.fira-sans-extralight-italic { font-weight: 200; font-style: italic; }
+.fira-sans-light-italic { font-weight: 300; font-style: italic; }
+.fira-sans-regular-italic { font-weight: 400; font-style: italic; }
+.fira-sans-medium-italic { font-weight: 500; font-style: italic; }
+.fira-sans-semibold-italic { font-weight: 600; font-style: italic; }
+.fira-sans-bold-italic { font-weight: 700; font-style: italic; }
+.fira-sans-extrabold-italic { font-weight: 800; font-style: italic; }
+.fira-sans-black-italic { font-weight: 900; font-style: italic; }
+
+/* ================================================================
+   3. TYPOGRAPHY
+   ================================================================ */
+
 .title {
-  font-family: 'Kaushan Script', 'Nunito', 'Roboto', 'Source Sans Pro', Arial, sans-serif !important;
+  font-family: var(--font-script), 'Nunito', 'Roboto', 'Source Sans Pro', Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  color: #ffaf93;
-}
-
-#footer,
-#copyrights {
-  background-color: #fde9e2;
-}
-
-#footer a,
-#copyrights a {
-  color: #000;
-}
-
-#scopri-di-piu,
-#chiedi-lezione,
-#invia {
-  background-color: #fde9e28c;
-  color: #242222;
-  border: 0.5px solid #242222;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-#scopri-di-piu:hover,
-#chiedi-lezione:hover,
-#invia:hover {
-  background-color: #fde9e28c;
-  color: #000000;
-  border: 1px solid #fde9e2;
-}
-
-.is-expanded-menu .full-header #logo {
-  border-right: none;
-}
-
-#first-list {
-  list-style-type: none;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  /* opzionale, se vuoi che l’immagine riempia il contenitore */
-}
-
-#form-anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  /* stessa altezza della navbar */
-  height: 0;
-  visibility: hidden;
-}
-
-#img-1 {
-  width: 80%;
-  height: 70%;
-  object-fit: cover;
-  border-radius: 42%;
-  /* opzionale, se vuoi che l’immagine riempia il contenitore */
-}
-
-#img-2 {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-  /* opzionale, se vuoi che l’immagine riempia il contenitore */
-  border: solid 20px white;
+  color: var(--primary-color);
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: var(--text-light);
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 .subtitle {
   text-align: center;
-  color: #666;
+  color: var(--text-gray);
   font-size: 1.2em;
   margin-bottom: 30px;
 }
-
 
 .intro-text {
   text-align: center;
@@ -260,96 +156,135 @@ h1 {
   font-size: 1.1em;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 15px;
-  vertical-align: top;
-  text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
 .phase-title {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.icon {
-  font-size: 1.2em;
-  margin-right: 5px;
+.large-text-section {
+  font-size: large;
 }
 
-html,
-body {
+#il-tuo-cane {
+  font-size: larger;
+}
+
+#contattami-final {
+  font-size: larger;
+}
+
+/* Typography Classes */
+.hook {
+  font-family: var(--font-serif) !important;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  border-radius: var(--border-radius);
+}
+
+.main-hook {
+  font-family: var(--font-heading) !important;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  border-radius: var(--border-radius);
+}
+
+.main-hook-secondary {
+  font-family: var(--font-heading) !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: larger;
+  border-radius: var(--border-radius);
+}
+
+.main-hook.form {
+  font-size: 2.6rem !important;
+}
+
+#title-rotation {
+  font-family: var(--font-heading) !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#chi-sono {
+  font-family: var(--font-heading) !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-size: 3rem !important;
+  border-radius: var(--border-radius) !important;
+}
+
+#metodo-title {
+  font-family: var(--font-serif) !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-size: 2.5rem !important;
+  border-radius: var(--border-radius) !important;
+  margin-bottom: 2em !important;
+  margin-top: 2em !important;
+}
+
+#come-funziona {
+  font-family: var(--font-serif) !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-size: 2.5rem !important;
+}
+
+#come-funziona-metodo {
+  font-family: var(--font-serif) !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+p {
+  font-family: var(--font-primary) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  color: var(--text-light) !important;
+}
+
+.fbox-content h3, h3 {
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+.fbox-content h3 {
+  font-size: 1.7rem !important;
+}
+
+.steps-section h3 {
+  margin-bottom: 2em !important;
+}
+
+/* ================================================================
+   4. LAYOUT & STRUCTURE
+   ================================================================ */
+
+html, body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-
-#logo .title {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease;
-}
-
-
-#img-method-1 {
-  width: 90%;
-  height: 60%;
-  object-fit: cover;
-  /* opzionale, se vuoi che l’immagine riempia il contenitore */
-}
-
-.metodo-di-lavoro .menu-link,
-.about .menu-link,
-.contattaci .menu-link {
-  color: #000;
-}
-
-img {
-  border-radius: 4px;
-}
-
-#read-section .container div.row {
-  border: 1px solid #000000;
-}
-
-.backg-1 {
-  background: #fef3ef;
-}
-
-/* .page-section {
- background: #ad8d8c;  
-} */
-
-.page-section.alt {
-  background: #fcf2ee !important;
-}
-
 .section {
   margin: 0;
-  /*   background-color:#fde9e2 ; */
 }
 
 #read-section {
   margin: 0;
 }
 
-#slider {
-  background: #fde9e2;
+#read-section .container div.row {
+  border: 1px solid #000000;
 }
 
 .row {
@@ -361,22 +296,116 @@ img {
   flex-shrink: 1;
 }
 
-article .portfolio-image img {
-  width: 100%;
-  height: 50rem !important;
-  object-fit: cover;
-}
-
 .portfolio .row {
   width: 100%;
 }
 
-.portfolio figcaption {
-  text-align: center;
-}
-
 .section-services .row {
   width: 100%;
+}
+
+#img-1-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+#il-tuo-cane-tira .large-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ================================================================
+   5. COMPONENTS
+   ================================================================ */
+
+/* Buttons */
+#scopri-di-piu,
+#chiedi-lezione,
+#invia {
+  background-color: var(--secondary-color-alpha);
+  color: var(--text-dark);
+  border: 0.5px solid var(--text-dark);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+#scopri-di-piu:hover,
+#chiedi-lezione:hover,
+#invia:hover {
+  background-color: var(--secondary-color-alpha);
+  color: #000000;
+  border: 1px solid var(--secondary-color);
+}
+
+#scopri-di-piu {
+  font-family: var(--font-sans) !important;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  border-radius: var(--border-radius);
+}
+
+.button {
+  background-color: #f5c1afcf !important;
+  border: 0.5px solid #8c8484 !important;
+}
+
+/* Images */
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 4px;
+}
+
+#img-1 {
+  width: 80%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 42%;
+}
+
+#img-2 {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 20px white;
+}
+
+#img-2-about {
+  top: 25%;
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+}
+
+#img-method-1 {
+  width: 90%;
+  height: 60%;
+  object-fit: cover;
+}
+
+#corso-images img {
+  width: 28em;
+  height: 28em;
+}
+
+#corso-images .fix {
+  margin-bottom: 30px;
+}
+
+article .portfolio-image img {
+  width: 100%;
+  height: 50rem !important;
+  object-fit: cover;
 }
 
 #section-services .row img {
@@ -385,23 +414,161 @@ article .portfolio-image img {
   object-fit: cover;
 }
 
-#faq-section {
-  margin-top: 25em;
+.portfolio figcaption {
+  text-align: center;
 }
 
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+/* Lists */
+#first-list {
+  list-style-type: none;
+}
+
+/* Anchors */
+#form-anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ================================================================
+   6. SECTIONS
+   ================================================================ */
+
+/* Header */
+#logo .title {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease;
+}
+
+#header-wrap {
+  -webkit-box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 9px 10px -2px var(--shadow-color);
+}
+
+.is-expanded-menu .full-header #logo {
+  border-right: none;
+}
+
+/* Navigation */
+.metodo-di-lavoro .menu-link,
+.about .menu-link,
+.contattaci .menu-link {
+  color: #000;
+}
+
+/* Slider */
+#slider {
+  background: var(--secondary-color);
+}
+
+#slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(234, 233, 233, 0.1);
+  z-index: 0;
+}
+
+#slider-inner {
+  background-image: url("https://ibb.co/Mx0BMnrn");
+}
+
+#slider-contattami {
+  background: url('../images/krys-running2.jpg') 10% center no-repeat !important;
+  background-size: auto !important;
+}
+
+/* Page Sections */
+.backg-1 {
+  background: var(--background-light);
+}
+
+.page-section.alt {
+  background: var(--background-alt) !important;
+}
+
+/* Contact Section */
 #section-contact {
-  padding-top: 4em;
+  padding-top: var(--section-padding);
   margin-top: 5em;
   margin-bottom: 15em;
-  border: 2px solid #a8a8a8;
+  border: 2px solid var(--border-color);
   border-radius: 10px;
-  background-color: #fde9e2;
+  background-color: var(--secondary-color);
 }
 
 #section-contact h2 {
   padding-bottom: 1em;
 }
 
+/* FAQ Section */
+#faq-section {
+  margin-top: 25em;
+}
+
+/* Problems Section */
+#problemi-comuni {
+  padding-top: 5.5rem;
+}
+
+/* Content Gallery */
+#content-gallery {
+  padding-top: 1em !important;
+}
+
+#content-gallery .content-wrap {
+  padding-top: 0;
+}
+
+/* Emphasis */
+.emphasis-title {
+  margin-bottom: 185px;
+}
+
+/* ================================================================
+   7. FORMS
+   ================================================================ */
+
+.form-control.border-form-control {
+  background-color: #fff7f5 !important;
+  border-radius: var(--border-radius-small);
+}
+
+/* ================================================================
+   8. RESPONSIVE DESIGN
+   ================================================================ */
+
+/* Tablet and Desktop - Card Columns */
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
@@ -426,63 +593,9 @@ article .portfolio-image img {
   }
 }
 
-#content-gallery {
-  padding-top: 1em !important;
-}
-
-#content-gallery .content-wrap {
-  padding-top: 0;
-}
-
-#corso-images img {
-  width: 28em;
-  height: 28em;
-}
-
-#corso-images .fix {
-  margin-bottom: 30px;
-}
-
-#il-tuo-cane {
-  font-size: larger;
-}
-
-.form-control.border-form-control {
-  background-color: #fff7f5 !important;
-  border-radius: 7px;
-}
-
-#img-2-about {
-  top: 25%;
-  width: 80%;
-  height: 50%;
-  object-fit: cover;
-  /* opzionale, se vuoi che l’immagine riempia il contenitore */
-}
-
-#slider {
-  background: #fde9e200;
-}
-
-.button {
-  background-color: #f5c1afcf !important;
-  border: 0.5px solid #8c8484 !important;
-}
-
-.large-text-section {
-  font-size: large;
-}
-
-#slider-inner {
-  background-image: url("https://ibb.co/Mx0BMnrn");
-}
-
-#problemi-comuni {
-  padding-top: 5.5rem;
-}
-
-
+/* Mobile Styles */
 @media (max-width: 768px) {
+  /* Layout Adjustments */
   #il-tuo-cane-tira {
     margin-top: 1em;
     display: flex;
@@ -493,6 +606,7 @@ article .portfolio-image img {
     margin-bottom: 3em;
   }
 
+  /* Typography */
   .title {
     font-size: 2rem;
   }
@@ -505,14 +619,22 @@ article .portfolio-image img {
     font-size: 0.9rem;
   }
 
+  /* Slider */
   #slider-inner {
     background-position: 61%;
   }
 
+  #slider-contattami {
+    background: url('../images/krys-running2.jpg') 85% center no-repeat !important;
+    background-size: cover !important;
+  }
+
+  /* Buttons */
   #scopri-di-piu {
     margin-top: 10em;
   }
 
+  /* Media Elements */
   .fixed-size {
     width: 100%;
     height: auto;
@@ -526,6 +648,7 @@ article .portfolio-image img {
     display: block;
   }
 
+  /* Layout */
   #phase-section .container .row .col-md-6 {
     border: none !important;
   }
@@ -540,146 +663,17 @@ article .portfolio-image img {
   }
 }
 
-/* 
+/* ================================================================
+   9. FOOTER
+   ================================================================ */
 
-#contattami-banner {
-  background-image: url("../images/krys-running.jpeg");
-} */
-
-#il-tuo-cane-tira .large-text-section {
-  display: flex;
-  flex-direction: column;
-  /* centra verticalmente */
-  justify-content: center;
-  /* centra anche orizzontalmente (opzionale) */
+#footer,
+#copyrights {
+  background-color: var(--secondary-color);
 }
 
-#title-rotation {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 400;
-  font-style: normal;
+#footer a,
+#copyrights a {
+  color: #000;
 }
 
-.emphasis-title {
-  margin-bottom: 185px;
-}
-
-#scopri-di-piu {
-  font-family: 'Montserrat', serif !important;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.2em;
-  border-radius: 30px;
-}
-
-.hook {
-  font-family: 'DM Serif Display', serif !important;
-  font-weight: 500;
-  font-style: normal;
-  font-size: larger;
-  border-radius: 30px;
-}
-
-.main-hook {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 500;
-  font-style: normal;
-  font-size: larger;
-  border-radius: 30px;
-
-}
-
-.main-hook-secondary {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 300;
-  font-style: normal;
-  font-size: larger;
-  border-radius: 30px;
-
-}
-
-#header-wrap {
-  -webkit-box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.10);
-}
-
-#img-1-wrapper {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-direction: column !important;
-}
-
-#chi-sono {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 500 !important;
-  font-style: normal !important;
-  font-size: 3rem !important;
-  border-radius: 30px !important;
-}
-
-#metodo-title {
-  font-family: 'DM Serif Display', serif !important;
-  font-weight: 500 !important;
-  font-style: normal !important;
-  font-size: 2.5rem !important;
-  border-radius: 30px !important;
-  margin-bottom: 2em !important;
-  margin-top: 2em !important;
-}
-
-#come-funziona {
-  font-family: 'DM Serif Display', serif !important;
-  font-weight: 500 !important;
-  font-style: normal !important;
-  font-size: 2.5rem !important;
-}
-
-#come-funziona-metodo {
-  font-family: 'DM Serif Display', serif !important;
-  font-weight: 200 !important;
-  font-style: normal !important;
-  font-size: 1.5rem !important;
-  margin-bottom: 0 !important;
-}
-
-p {
-  font-family: 'Raleway', sans-serif !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  font-size: 1.1rem !important;
-  line-height: 1.6 !important;
-  color: #333 !important;
-}
-
-.fbox-content h3, h3 {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 600 !important;
-  font-style: normal !important;
-  font-size: 1.5rem !important;
-  margin-bottom: 0 !important;
-}
-
-.fbox-content h3 {
-  font-size: 1.7rem !important;
-}
-
-.steps-section h3 {
-  margin-bottom: 2em !important;
-}
-
-#contattami-final {
-  font-size : larger;
-}
-
-.main-hook.form {
-  font-size: 2.6rem !important;
-}
-
-#slider::before {
-  content: "";
-  position: absolute;
-  inset: 0; /* copre tutta la sezione */
-  background: rgba(234, 233, 233, 0.1); /* grigio chiaro al 10% */
-  z-index: 0;
-}
