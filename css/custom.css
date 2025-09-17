@@ -24,9 +24,11 @@
   --primary-color: #ffaf93;
   --secondary-color: #fde9e2;
   --secondary-color-alpha: #fde9e28c;
+  --button-color: #f7cdbe; 
   --background-light: #fef3ef;
   --background-alt: #fcf2ee;
   --text-dark: #242222;
+  --text-theme-dark: #865544;
   --text-gray: #666;
   --text-light: #333;
   --border-color: #a8a8a8;
@@ -333,6 +335,8 @@ html, body {
   transition: var(--transition-smooth);
 }
 
+
+
 #scopri-di-piu:hover,
 #chiedi-lezione:hover,
 #invia:hover {
@@ -456,14 +460,7 @@ th {
   visibility: hidden;
 }
 
-#contattami-title {
-  margin-top: 14rem;
-}
 
-#slider-contattami h1 {
-  color: var(--cnvs-body-bg);
-  font-family: var(--font-heading);
-}
 /* ================================================================
    6. SECTIONS
    ================================================================ */
@@ -567,6 +564,20 @@ th {
   margin-bottom: 185px;
 }
 
+/* PAGE Contattami */
+#contattami-title {
+  margin-top: 14rem;
+}
+
+#slider-contattami h1 {
+  color: var(--cnvs-body-bg);
+  font-family: var(--font-heading);
+}
+
+.text-info {
+  color: var(--text-theme-dark)!important;
+}
+
 /* ================================================================
    7. FORMS
    ================================================================ */
@@ -576,6 +587,23 @@ th {
   border-radius: var(--border-radius-small);
 }
 
+.bg-color {
+  background-color: var(--button-color) !important;
+}
+
+.color, label a {
+  color: var(--text-theme-dark) !important;
+}
+
+.fbox-icon i {
+  background-color: var(--button-color) !important;
+  color: var(--text-dark) !important;
+}
+
+.fbox-content a {
+    color: var(--text-theme-dark) !important;
+  
+}
 /* ================================================================
    8. RESPONSIVE DESIGN
    ================================================================ */
