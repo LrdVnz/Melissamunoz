@@ -456,6 +456,14 @@ th {
   visibility: hidden;
 }
 
+#contattami-title {
+  margin-top: 14rem;
+}
+
+#slider-contattami h1 {
+  color: var(--cnvs-body-bg);
+  font-family: var(--font-heading);
+}
 /* ================================================================
    6. SECTIONS
    ================================================================ */
@@ -504,8 +512,12 @@ th {
 }
 
 #slider-contattami {
-  background: url('../images/krys-running2.jpg') 10% center no-repeat !important;
-  background-size: auto !important;
+  background-image: url('../images/krys-running2.jpg');
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-size: cover;
+  background-attachment: scroll;
+  min-height: 60vh;
 }
 
 /* Page Sections */
@@ -625,8 +637,12 @@ th {
   }
 
   #slider-contattami {
-    background: url('../images/krys-running2.jpg') 85% center no-repeat !important;
+    background-image: url('../images/krys-running2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover !important;
+    background-attachment: scroll;
+    min-height: 60vh;
   }
 
   /* Buttons */
