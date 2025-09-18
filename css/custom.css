@@ -290,6 +290,7 @@ html, body {
 }
 
 .row {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
 }
@@ -307,6 +308,7 @@ html, body {
 }
 
 #img-1-wrapper {
+  display: -webkit-flex !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -314,6 +316,7 @@ html, body {
 }
 
 #il-tuo-cane-tira .large-text-section {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -638,6 +641,7 @@ th {
   /* Layout Adjustments */
   #il-tuo-cane-tira {
     margin-top: 1em;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -706,6 +710,7 @@ th {
     color: white !important;
   }
 }
+
 
 /* ================================================================
    9. FOOTER
