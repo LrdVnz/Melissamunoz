@@ -574,8 +574,8 @@ th {
   margin-top: 14rem;
 }
 
-#slider-contattami h1 {
-  color: var(--cnvs-body-bg);
+#slider-contattami h1, #contattaci-h1 {
+  color: var(--text-dark);
   font-family: var(--font-heading);
 }
 
