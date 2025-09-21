@@ -356,6 +356,8 @@ html, body {
   border-radius: var(--border-radius);
 }
 
+
+
 .button {
   background-color: #f5c1afcf !important;
   border: 0.5px solid #8c8484 !important;
@@ -708,6 +710,16 @@ th {
 
   .menu-link {
     color: white !important;
+  }
+
+  .sticky-header #header-wrap {
+    border-radius: 30px!important;
+    width: 90%!important;
+    margin: auto!important;
+    margin-right: 5%!important;
+    margin-left: 5%!important;
+    margin-top: 1%!important;
+    transition: all 0.3s ease;
   }
 }
 
