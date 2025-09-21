@@ -721,6 +721,11 @@ th {
     margin-top: 1%!important;
     transition: all 0.3s ease;
   }
+
+  .sticky-header .menu-link {
+    color: black !important;
+  }
+
 }
 
 
