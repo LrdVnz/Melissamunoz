@@ -615,6 +615,10 @@ th {
     color: var(--text-theme-dark) !important;
   
 }
+
+.header-wrap-clone {
+  height: auto!important;
+}
 /* ================================================================
    8. RESPONSIVE DESIGN
    ================================================================ */
