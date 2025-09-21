@@ -465,6 +465,9 @@ th {
   visibility: hidden;
 }
 
+#homepage-slider.swiper_wrapper {
+  width: 30%!important;
+}
 
 /* ================================================================
    6. SECTIONS
@@ -583,6 +586,9 @@ th {
   color: var(--text-theme-dark)!important;
 }
 
+.footer-clickable {
+  color: rgb(148, 75, 86)!important;
+}
 /* ================================================================
    7. FORMS
    ================================================================ */
@@ -722,6 +728,7 @@ th {
     transition: all 0.3s ease;
   }
 
+  
   .sticky-header .menu-link {
     color: black !important;
   }
