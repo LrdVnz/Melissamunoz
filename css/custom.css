@@ -730,12 +730,17 @@ th {
     margin-left: 5%!important;
     margin-top: 1%!important;
     transition: all 0.3s ease;
+    background-color: #f7cdbe!important;
   }
 
+  .sticky-header #header-wrap .title {
+   color: #212529;  
+  }
   
   .sticky-header .menu-link {
     color: black !important;
   }
+
 
 }
 
