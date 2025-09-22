@@ -469,6 +469,14 @@ th {
   width: 30%!important;
 }
 
+.mobile-header {
+  display: none!important;
+}
+
+.desktop-header {
+  display: block!important;
+}
+
 /* ================================================================
    6. SECTIONS
    ================================================================ */
@@ -741,11 +749,11 @@ th {
     color: black !important;
   }
 
-  .header-desktop {
+  .desktop-header {
     display: none!important;
   }
 
-  .header-mobile {
+  .mobile-header {
     display: block!important;
   }
 
