@@ -665,8 +665,9 @@ relazione con il tuo cane con l’aiuto di Melissa Muñoz.">
 			if (!terms.checked) {
 				alert('Devi accettare i termini e le condizioni per inviare il form.');
 				e.preventDefault();
-			}
-			fbq('track', 'Lead');
+			} else {
+				fbq('track', 'Lead');
+			} 
 		});
 	</script>
 
